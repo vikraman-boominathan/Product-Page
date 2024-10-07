@@ -1,14 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        kumbh: ["KumbhSans", "sans-serif"], // Add the custom font family
+      },
+      fontWeight: {
+        regular: 400,
+        bold: 700,
+      },
+    },
   },
-  plugins: [
-    require('daisyui'),
-  ],
-}
-
+  plugins: [require("daisyui")],
+};

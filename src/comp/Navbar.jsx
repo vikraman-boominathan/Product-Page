@@ -15,29 +15,29 @@ export default function Navbar() {
         </div>
         <div className="w-full pl-10 flex  justify-center items-center gap-8">
           <div className="flex items-end">
-            <a className="inline-flex items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">
+            <a className="inline-flex cursor-pointer items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">
               Collections
             </a>
           </div>
 
           <div>
-            <a className="inline-flex items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">Men</a>
+            <a className="inline-flex cursor-pointer items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">Men</a>
           </div>
           <div>
-            <a className="inline-flex items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">Women</a>
+            <a className="inline-flex cursor-pointer items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">Women</a>
           </div>
           <div>
-            <a className="inline-flex items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">About</a>
+            <a className="inline-flex cursor-pointer items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">About</a>
           </div>
           <div>
-            <a className="inline-flex items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">Contact</a>
+            <a className="inline-flex cursor-pointer items-center font-extralight min-h-32 border-b-2 border-transparent px-1 pt-1 text-sm text-gray-500 hover:border-orange-300 hover:text-black">Contact</a>
           </div>
         </div>
       </div>
       <div className="flex-none gap-6">
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-            <div className="indicator">
+            <div className="indicator cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -78,7 +78,7 @@ export default function Navbar() {
             role="button"
             className="btn btn-ghost btn-circle avatar"
           >
-            <div className="w-10 rounded-full hover:ring-1 hover:ring-orange-400">
+            <div className="w-10 cursor-pointer rounded-full hover:ring-1 hover:ring-orange-400">
               <img
                 alt="Tailwind CSS Navbar component"
                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
