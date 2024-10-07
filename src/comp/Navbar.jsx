@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="navbar bg-white min-h-32 flex justify-between">
+    <div className="navbar  min-h-32 flex justify-between">
       <div>
         <div className="flex">
           <a className="btn btn-ghost text-black  text-xl">

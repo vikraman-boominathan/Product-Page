@@ -13,10 +13,10 @@ export default function ProductInfo() {
   };
 
   return (
-    <div className="w-1/2 ">
-      <h1 className="font-kumbh cursor-pointer font-regular text-black tracking-widest">
+    <div className=" flex flex-col space-x-24">
+      <div className="font-kumbh ml-24 cursor-pointer font-regular text-black tracking-widest">
         Sneaker Company
-      </h1>
+      </div>
       <h2 className="font-kumbh font-bold text-black text-5xl pt-5">
         Fall Limited Edition Sneakers
       </h2>
@@ -38,7 +38,7 @@ export default function ProductInfo() {
         </div>
       </div>
       <div className=" flex gap-4">
-        <div className="w-[20%] flex justify-between items-center rounded-md  mt-5 bg-gray-200 px-3 py-1">
+        <div className="w-[35%] flex justify-between items-center rounded-md  mt-5 bg-gray-200 px-3 py-1">
           <span className="font-bold text-2xl text-orange-400 cursor-pointer" onClick={decrement}>-</span>
           <span className="font-bold text-xl text-black">{count}</span>
           <span className="font-bold text-2xl text-orange-400 cursor-pointer" onClick={increment}>+</span>
