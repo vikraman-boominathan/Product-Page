@@ -44,7 +44,7 @@ export default function ProductInfo() {
           <span className="font-bold text-2xl text-orange-400 cursor-pointer" onClick={increment}>+</span>
         </div>
         <div >
-          <button className="flex justify-center items-center  py-3 px-12 bg-orange-600 rounded-md mt-5">
+          <button className="flex justify-center items-center  py-3 px-12 bg-orange-400 rounded-md mt-5">
             <span>
               <svg width="22" fill="black" height="20" xmlns="http://www.w3.org/2000/svg">
                 <path
