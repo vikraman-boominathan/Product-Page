@@ -1,16 +1,7 @@
-import { useState } from "react";
 
-export default function ProductInfo() {
-  const [count, setCount] = useState(0);
 
-  const increment = () => {
-    setCount(count + 1);
-  };
-  const decrement = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    }
-  };
+export default function ProductInfo({ count, increment, decrement, addToCart }) {
+  
 
   return (
     <div className=" flex flex-col space-x-24">
@@ -44,7 +35,7 @@ export default function ProductInfo() {
           <span className="font-bold text-2xl text-orange-400 cursor-pointer" onClick={increment}>+</span>
         </div>
         <div >
-          <button className="flex justify-center items-center  py-3 px-12 bg-orange-400 rounded-md mt-5">
+          <button onClick={addToCart} className="flex justify-center items-center  py-3 px-12 bg-orange-400 rounded-md mt-5">
             <span>
               <svg width="22" fill="black" height="20" xmlns="http://www.w3.org/2000/svg">
                 <path
