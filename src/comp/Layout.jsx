@@ -25,13 +25,21 @@ export default function Layout() {
 
   return (
     <>
-      <div className="container mx-auto h-screen">
-        <div className="mx-auto max-w-7xl flex flex-col h-screen">
-          <Navbar count={count} removeFromCart={removeFromCart}/>
-          <div className="flex justify-center mx-auto max-w-6xl space-y-20">
-            <ImageSection />
-
-            <ProductInfo count={count} increment={increment} decrement={decrement} addToCart={addToCart}/>
+      <div className="container mx-auto h-screen w-screen">
+        <div className="md:mx-auto md:max-w-7xl flex flex-col h-screen">
+          <Navbar count={count} removeFromCart={removeFromCart} />
+          <div className="flex flex-col sm:flex-row justify-center w-full md:mx-auto md:max-w-6xl space-y-10 md:space-y-20">
+            <div className="flex-grow">
+              <ImageSection />
+            </div>
+            <div>
+              <ProductInfo
+                count={count}
+                increment={increment}
+                decrement={decrement}
+                addToCart={addToCart}
+              />
+            </div>
           </div>
         </div>
       </div>
